@@ -25,6 +25,6 @@ class DevConfig(Config):
     FLASK_ENV = 'development'
     DEBUG = True
     TESTING = True
-    DATABASE_NAME = 'mydata.db'
+    DATABASE_NAME = 'test-mongo'
     DATABASE_HOST = 'localhost'
     DATABASE_PORT = '27017'

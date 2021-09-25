@@ -14,6 +14,7 @@ from flask import Flask
 
 ## Database model 
 from model.user import User
+
 from model.posting import Posting
 # mongodb
 from flask_mongoengine import MongoEngine
@@ -44,7 +45,7 @@ db = MongoEngine(app)
 
 # Passing db to all the api blueprints & get blueprints
 user_API = UserAPI(User)
-post_Api = PostingAPI(Post)
+post_API = PostingAPI(Posting)
 
 ########## All the blue print is inside the views application #######
 # Register blueprint
