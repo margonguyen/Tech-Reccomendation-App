@@ -1,5 +1,6 @@
 import mongoengine as db
 from model.posting import Posting
+
 class User(db.Document):
     email = db.StringField()    
     password = db.StringField()
